@@ -5,6 +5,8 @@ const entriesNav = document.querySelector('.entries-nav');
 
 entryForm.addEventListener('submit', handleForm);
 
+let count = 1;
+
 function handleForm(e) {
     event.preventDefault();
     
@@ -19,6 +21,8 @@ function handleForm(e) {
 
     const displayEntryButton = document.createElement("button");
     displayEntryButton.className = "entry-button"; 
-    displayEntryButton.textContent = 1;
+    displayEntryButton.textContent = count;
     entriesNav.append(displayEntryButton);
+
+    count++;
 }
