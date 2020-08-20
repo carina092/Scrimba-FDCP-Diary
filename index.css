@@ -4,6 +4,11 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT';
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #2B84FF;
+}
+
 .wrapper {
     width: 100%;
     max-width: 1280px;
