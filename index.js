@@ -1,7 +1,7 @@
 const entryForm = document.getElementById("entryForm");
 const entriesSection = document.querySelector("#entries");
 const entryTextbox = document.querySelector(".entry-textbox");
-const entriesNav = document.querySelector('.entries-nav');
+const entriesNav = document.querySelector(".entries-nav");
 
 entryForm.addEventListener('submit', handleForm);
 
@@ -23,6 +23,10 @@ function handleForm(e) {
     displayEntryButton.className = "entry-button"; 
     displayEntryButton.textContent = count;
     entriesNav.append(displayEntryButton);
+
+    displayEntryButton.addEventListener('click', function() {
+        entryDiv.style.display = "block";
+    });
 
     count++;
 }
