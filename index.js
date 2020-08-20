@@ -12,4 +12,6 @@ function handleForm(e) {
     entryDiv.classList.add("single-entry");
     entryDiv.textContent = entryTextbox[0].value;
     entriesSection.append(entryDiv);
+
+    entryTextbox[0].value = "";
 }
