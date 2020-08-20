@@ -6,6 +6,10 @@ entryForm.addEventListener('submit', handleForm);
 
 function handleForm(e) {
     event.preventDefault();
-    console.log(entryTextbox[0].value);
-    // console.log("I was clicked");
+    // console.log("entryTextbox: " + entryTextbox[0].value);
+    
+    const entryDiv = document.createElement("div");
+    entryDiv.classList.add("single-entry");
+    entryDiv.textContent = entryTextbox[0].value;
+    entriesSection.append(entryDiv);
 }

@@ -9,7 +9,7 @@ html, body {
     box-shadow: 0 0 5px 2px #2B84FF;
 }
 
-.wrapper {
+#wrapper {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
