@@ -1,18 +1,24 @@
 const entryForm = document.getElementById("entryForm");
-const entriesSection = document.getElementById("entries");
-const entryTextbox = document.getElementsByClassName("entry-textbox");
+const entriesSection = document.querySelector("#entries");
+const entryTextbox = document.querySelector(".entry-textbox");
+const entriesNav = document.querySelector('.entries-nav');
 
 entryForm.addEventListener('submit', handleForm);
 
 function handleForm(e) {
     event.preventDefault();
-    // console.log("entryTextbox: " + entryTextbox[0].value);
     
     const entryDiv = document.createElement("div");
     entryDiv.classList.add("single-entry");
-    entryDiv.textContent = entryTextbox[0].value;
+    entryDiv.textContent = entryTextbox.value;
+    
     entryDiv.style.display = "none";
     entriesSection.append(entryDiv);
 
-    entryTextbox[0].value = "";
+    entryTextbox.value = "";
+
+    const displayEntryButton = document.createElement("button");
+    displayEntryButton.className = "entry-button"; 
+    displayEntryButton.textContent = 1;
+    entriesNav.append(displayEntryButton);
 }
