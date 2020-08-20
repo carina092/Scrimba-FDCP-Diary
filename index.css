@@ -9,7 +9,7 @@ html, body {
     box-shadow: 0 0 5px 2px #2B84FF;
 }
 
-#wrapper {
+#wrapper, #entries {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -31,6 +31,7 @@ html, body {
     justify-content: flex-start;
     width: 100%;
     max-width: 400px;
+    margin: 0 0 30px 0;
 }
 
 .entry-textbox {
@@ -49,4 +50,12 @@ html, body {
     border: none;
     padding: 10px 15px;
     font-size: 12px;
+}
+
+#entries {
+    background-color: #16697A;
+    color: #EDE7E3;
+    border-radius: 4px;
+    padding: 15px;
+    max-width: 370px !important; 
 }
