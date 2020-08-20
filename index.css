@@ -59,3 +59,24 @@ html, body {
     padding: 15px;
     max-width: 370px !important; 
 }
+
+.entries-nav {
+    align-self: flex-start;
+    margin: 0 0 20px 0;
+}
+
+.entry-button {
+    margin: 0 5px;
+}
+
+.entry-button:hover {
+    cursor: pointer;
+}
+
+.entry-button:first-child {
+    margin: 0 5px 0 0;
+}
+
+.entry-button:last-child {
+    margin: 0 0 0 5px;
+}
