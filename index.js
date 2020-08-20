@@ -11,6 +11,7 @@ function handleForm(e) {
     const entryDiv = document.createElement("div");
     entryDiv.classList.add("single-entry");
     entryDiv.textContent = entryTextbox[0].value;
+    entryDiv.style.display = "none";
     entriesSection.append(entryDiv);
 
     entryTextbox[0].value = "";
