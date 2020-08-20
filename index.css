@@ -2,3 +2,16 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+#entryForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+}
